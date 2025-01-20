@@ -2,7 +2,7 @@
 
 ## Video Demonstration
 
-[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://github.com/handi425/unity_flappy_bird/blob/main/2025-01-21%2000-21-05.mp4)
+[![Video Title]](https://github.com/handi425/unity_flappy_bird/blob/main/2025-01-21%2000-21-05.mp4)
 
 [Previous content remains the same until section 8...]
 
