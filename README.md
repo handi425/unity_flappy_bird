@@ -1,5 +1,12 @@
 # Flappy Bird Clone - Unity Implementation Guide
 
+## Video Demonstration
+
+<video width="560" height="315" controls>
+  <source src="https://raw.githubusercontent.com/handi425/unity_flappy_bird/85ae004bb99a4fd3148ab937742fe313d33aff2e/Assets/Scripts/2025-01-21%2000-21-05.mkv" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 [Previous content remains the same until section 8...]
 
 ## 9. Pipe Variation System
