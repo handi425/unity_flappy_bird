@@ -1,0 +1,116 @@
+/* Game container styles */
+#game-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Score display styles */
+.score-text {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    translate: -50% 0;
+    -unity-text-align: middle-center;
+    font-size: 72px;
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-outline-width: 2px;
+    -unity-text-outline-color: black;
+    transition-duration: 0.1s;
+}
+
+/* Game over panel styles */
+.game-over-panel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition-duration: 0.3s;
+}
+
+.game-over-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    align-items: center;
+    min-width: 300px;
+    transition-duration: 0.3s;
+    translate: 0 -100%;
+    opacity: 0;
+}
+
+.game-over-panel.show .game-over-container {
+    translate: 0 0;
+    opacity: 1;
+}
+
+/* Restart button styles */
+.restart-button {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    -unity-font-style: bold;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border-width: 0;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition-duration: 0.2s;
+}
+
+.restart-button:hover {
+    background-color: rgb(56, 142, 60);
+    scale: 1.05;
+}
+
+.restart-button:active {
+    background-color: rgb(46, 125, 50);
+    scale: 0.95;
+}
+
+/* Score animations */
+.score-text.score-increment {
+    scale: 1.2;
+}
+
+/* High score text */
+#highScoreLabel {
+    color: rgb(100, 100, 255);
+    -unity-font-style: bold;
+}
+
+/* Final score display */
+#finalScoreLabel {
+    color: rgb(50, 50, 50);
+    -unity-font-style: bold;
+    font-size: 64px;
+    margin: 20px 0;
+}
+
+/* Title text */
+.game-over-title {
+    color: rgb(255, 100, 100);
+    font-size: 48px;
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media screen and (max-width: 600px) {
+    .score-text {
+        font-size: 48px;
+    }
+
+    .game-over-container {
+        min-width: 250px;
+        padding: 20px;
+    }
+
+    .restart-button {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+
+    <!-- Main Game UI -->
+    <engine:VisualElement name="game-container" style="width: 100%; height: 100%;">
+        <!-- Score Display -->
+        <engine:Label name="scoreLabel" 
+                     text="0" 
+                     class="score-text"
+                     style="position: absolute;
+                            left: 50%;
+                            top: 50px;
+                            translate: -50% 0;
+                            -unity-text-align: middle-center;
+                            font-size: 72px;
+                            color: white;
+                            -unity-font-style: bold;
+                            -unity-text-outline-width: 2px;
+                            -unity-text-outline-color: black;" />
+
+        <!-- Game Over Panel -->
+        <engine:VisualElement name="gameOverPanel" 
+                             class="game-over-panel"
+                             style="width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                    display: none;">
+            
+            <engine:VisualElement class="game-over-container"
+                                 style="background-color: rgb(255, 255, 255);
+                                        padding: 40px;
+                                        border-radius: 20px;
+                                        align-items: center;
+                                        min-width: 300px;">
+                
+                <engine:Label text="Game Over!"
+                             style="font-size: 48px;
+                                    -unity-font-style: bold;
+                                    margin-bottom: 20px;
+                                    color: rgb(255, 100, 100);" />
+                
+                <engine:Label text="Final Score"
+                             style="font-size: 24px;
+                                    margin-bottom: 10px;" />
+                
+                <engine:Label name="finalScoreLabel"
+                             text="0"
+                             style="font-size: 64px;
+                                    -unity-font-style: bold;
+                                    margin-bottom: 30px;
+                                    color: rgb(50, 50, 50);" />
+                
+                <engine:Label name="highScoreLabel"
+                             text="High Score: 0"
+                             style="font-size: 24px;
+                                    margin-bottom: 40px;
+                                    color: rgb(100, 100, 255);" />
+                
+                <engine:Button name="restartButton"
+                             text="Play Again"
+                             class="restart-button"
+                             style="width: 200px;
+                                    height: 60px;
+                                    font-size: 24px;
+                                    -unity-font-style: bold;
+                                    background-color: rgb(76, 175, 80);
+                                    color: white;
+                                    border-width: 0;
+                                    border-radius: 30px;
+                                    margin-top: 20px;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+
+</engine:UXML>
